@@ -1,0 +1,210 @@
+/*============CSS DE LA PAGINA INDEX*/
+
+header{
+    
+    margin-bottom: 100px;
+    border-style: solid;
+    border-color: gold;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    background-color: rgb(0, 0, 0);
+    padding: 1px;
+    
+}
+
+header nav ul{
+
+    display: flex;
+    list-style: none;
+    text-align: center;
+    justify-content: space-around;
+}
+
+
+
+header nav ul li{
+        padding: 5px;
+        display: inline-block;
+        position: relative;
+        justify-content: space-between;
+        align-content: center;
+}
+
+header nav ul li a{
+    display: block;
+    padding: 20px 25px;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+
+}
+
+header nav ul li ul.Precios_renta li{
+    align-content: center;
+    display: inline-flex;
+    background: #000000;
+    margin-left: 0;
+    
+}
+
+header nav ul li ul.Precios_renta{
+    width: 200px;
+    background: #000000;
+    position: absolute;
+    z-index: 200;
+    display: none;
+
+}
+
+header nav ul li a:hover{
+    background: #222;
+
+}
+
+header nav ul li:hover ul.Precios_renta{
+    display: block;
+
+}
+
+
+
+
+
+body{
+    margin: 0;
+    background-image: url(/Imagenes/pngtree-simple-solid-color-series-background-texture-black-image_929449.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+
+
+.contenido{
+    margin: 20px;
+    list-style-position: inside;
+}
+
+.contenido h2{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration:underline;
+
+}
+
+.footer_contacto {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #000000;
+    border-top: gold;
+    border-style: solid;
+    padding: 10px;
+    position: relative;
+}
+
+.redes-sociales {
+    display: block;
+}
+
+.redes-enlaces{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin: 10px;
+
+}
+
+.redes-enlaces a {
+    text-decoration: none;
+    color: gold;
+    margin-bottom: 50px;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: gold;
+}
+
+
+
+
+
+
+
+/*==========CSS DE LA PAGINA FORMULARIO==========*/
+
+
+
+
+.form-group
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+select {
+    width: calc(30% - 80px);
+    padding: 10px;
+    border: 2px solid #e4dcdc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+.botton {
+    background-color: #ff0000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.botton:hover{
+    background-color: #ff6c6c;
+    border-radius: 10px;
+
+}
+
+
+/*=============CSS DE LA PAGINA TABLAS */
+
+
+/* Estilos generales para el cuerpo (opcional, para una mejor visualización) */
+
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 20px auto; 
+    background-color: #ffffff;
+    border-radius: 4px;
+    color: #000000;
+    
+}
+
+th, td {
+    border: 1px solid #ddd; /* Borde de 1px, sólido, color gris claro para cada celda */
+    padding: 12px 15px; /* Relleno interno de la celda (superior/inferior 12px, izquierda/derecha 15px) */
+    text-align: left; /* Alinea el texto a la izquierda dentro de la celda */
+}
+
+/* Estilos para el encabezado de la tabla */
+thead th {
+    color: white; /* Color de texto blanco para el encabezado */
+    font-weight: bold; /* Texto en negrita */
+    
+}
+
+
+/* Efecto hover en las filas del cuerpo */
+tbody tr:hover {
+    background-color: #e9e9e9; /* Cambia el color de fondo al pasar el ratón */
+}
