@@ -2,7 +2,7 @@
 
 header{
     
-    margin-bottom: 100px;
+    margin-bottom: 0.5rem;
     border-style: solid;
     border-color: gold;
     border-top: 1px;
@@ -98,37 +98,65 @@ body{
 }
 
 .footer_contacto {
-    display: flex;
+    padding: 1rem;
     justify-content: space-evenly;
-    background-color: #000000;
+    background-color: #201f1f;
     border-top: gold;
     border-style: solid;
-    padding: 10px;
     position: relative;
 }
 
 .redes-sociales {
     display: block;
+    justify-content: center;
 }
 
-.redes-enlaces{
+
+.redes-enlaces ul {
+    justify-content: center;
+    list-style: none;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    margin: 10px;
-
 }
+
 
 .redes-enlaces a {
     text-decoration: none;
     color: gold;
-    margin-bottom: 50px;
 }
+
+.redes-enlaces a:hover {
+    text-decoration: line-through;
+    color: white;
+
+}
+
 
 .footer-bottom a {
     text-decoration: none;
     color: gold;
+}
+
+.carousel {
+    max-width: 800px; 
+    margin: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+.carousel img {
+    height: auto;
+    object-fit: cover;
+    max-height: 500px; 
+  }          
+             
+
+  /*========TARJETAS=========*/
+
+.card-hover:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(61, 219, 247, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
@@ -142,20 +170,7 @@ body{
 
 
 
-.form-group
-input[type="text"],
-input[type="number"],
-input[type="email"],
-input[type="tel"],
-input[type="date"],
-input[type="time"],
-select {
-    width: calc(30% - 80px);
-    padding: 10px;
-    border: 2px solid #e4dcdc;
-    border-radius: 5px;
-    font-size: 15px;
-}
+
 
 
 .botton {
