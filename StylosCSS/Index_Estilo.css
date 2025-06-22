@@ -223,3 +223,10 @@ thead th {
 tbody tr:hover {
     background-color: #e9e9e9; /* Cambia el color de fondo al pasar el ratón */
 }
+
+
+/* Este estilo es para  organizar el ancho de la imagenes de las cartas*/
+.card-img-top {
+            height: 150px;
+            object-fit: cover;
+        }
