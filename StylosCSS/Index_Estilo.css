@@ -1,76 +1,83 @@
 /*============CSS DE LA PAGINA INDEX*/
 
-header{
-    
-    margin-bottom: 0.5rem;
-    border-style: solid;
-    border-color: gold;
-    border-top: 1px;
-    border-left: 1px;
-    border-right: 1px;
-    background-color: rgb(0, 0, 0);
-    padding: 1px;
-    
+/* Contenedor principal del menú */
+.navbar {
+  display: flex; /* Activamos Flexbox */
+  justify-content: space-between; /* Espacia elementos: izquierda, centro y derecha */
+  align-items: center; /* Centra verticalmente */
+  padding: 10px 20px 5px 20px;
+  background-color: #111111;
+  color: blue; /* Color del texto */
+  border-radius: 5px; /* Bordes redondeados */
+  margin-bottom: 2rem;
+  border-top: #111111;
+  border-left: #111111;
+  border-right: #111111;
+  border-bottom: gold;
+  border-style: solid;
 }
 
-header nav ul{
-
-    display: flex;
-    list-style: none;
-    text-align: center;
-    justify-content: space-around;
+/* Logo del sitio */
+.logo-image img:hover {
+  display: flex;
+  transform: scale(1.50); /* Aumenta el tamaño de la imagen al pasar el mouse */
+  transition: transform 0.4s; /* Transición suave */
 }
 
-
-
-header nav ul li{
-        padding: 5px;
-        display: inline-block;
-        position: relative;
-        justify-content: space-between;
-        align-content: center;
+/* Contenedor de las opciones de menú */
+.navbar .menu {
+  display: flex; /* Flex interno para alinear horizontalmente */
+  gap: 30px; /* Espacio entre las opciones del menú */
 }
 
-header nav ul li a{
-    display: block;
-    padding: 20px 25px;
-    font-size: 16px;
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: large;
+/* Estilo para los enlaces del menú */
+.navbar a {
+  text-decoration: none;
+  color: blue;
+  font-weight: 500;
+  transition: color 0.3s;
 
-}
-
-header nav ul li ul.Precios_renta li{
-    align-content: center;
-    display: inline-flex;
-    background: #000000;
-    margin-left: 0;
-    
-}
-
-header nav ul li ul.Precios_renta{
-    width: 200px;
-    background: #000000;
-    position: absolute;
-    z-index: 200;
-    display: none;
-
-}
-
-header nav ul li a:hover{
-    background: #222;
-
-}
-
-header nav ul li:hover ul.Precios_renta{
-    display: block;
-
+  /* Valores Tipo de Letra con Google Fonts */
+  font-family:'Times New Roman', Times, serif;
+  font-optical-sizing: auto;
+  font-weight: 50;
+  font-style:italic;
 }
 
 
+.desplegable {
+  background-color: #111111;
+}
+
+
+/* Botón de inicio de sesión */
+
+
+
+
+
+
+/*  PSEUDO-CLASES*/
+/* Efecto hover para mejorar la experiencia */
+.navbar a:hover {
+  transition: 0.3s ease-in-out;
+  color: gold;
+  border-radius: 5px;
+  padding: auto;
+  background-color: blue;
+}
+
+
+
+
+input[type="text"]:focus{
+  border: 2px dotted #1abc9c; /* Cambia el color del borde al hacer foco */
+  outline: none; /* Elimina el contorno por defecto */
+  box-shadow: 0 0 5px rgba(26, 188, 156, 0.5); /* Sombra alrededor del campo */
+
+}
+
+/*=================================================================*/
 
 
 
